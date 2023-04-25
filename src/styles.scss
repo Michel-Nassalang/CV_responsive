@@ -1,1 +1,50 @@
 /* You can add global styles to this file, and also import other style files */
+@import "_cvStyles";
+@import "_extensionBootstrap";
+@import "node_modules/bootstrap/scss/bootstrap.scss";
+
+@font-face {
+    font-family: 'Sansation';
+    src: url(assets/fonts/Sansation_Bold.ttf);
+}
+
+.lightZone {
+    background-color: $secondary;
+    color: $primary;
+}
+
+.darkZone {
+    background-color: $primary;
+    color: $secondary;
+}
+
+.lightZone h1 {
+    border-bottom: 2px solid $primary;
+    font-size: 38px;
+}
+
+.darkZone h1 {
+    border-bottom: 2px solid $secondary;
+    font-size: 38px;
+}
+
+.lightZone section section h1 {
+    border: 0;
+    font-size: 20px;
+}
+
+header span {
+    font-size: 38px;
+    font-family: 'Sansation', sans-serif;
+}
+
+.container {
+    border: 2px solid $primary;
+}
+
+.header {
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
